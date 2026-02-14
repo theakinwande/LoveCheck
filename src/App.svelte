@@ -181,6 +181,32 @@
     </header>
 
     {#if gameState === "home"}
+      <a
+        href="https://github.com/theakinwande/LoveCheck"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fixed top-6 right-6 flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-stone-300 uppercase tracking-widest transition-all hover:scale-105 group"
+        in:fade
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="text-rose-500 group-hover:fill-rose-500 transition-colors"
+        >
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+          />
+        </svg>
+        <span>Star on GitHub</span>
+      </a>
+
       <div class="text-center space-y-16" in:fade={{ duration: 800 }}>
         <div class="space-y-6">
           <h2
