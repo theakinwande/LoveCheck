@@ -4,7 +4,7 @@
   import { createEventDispatcher } from "svelte";
 
   export let questions = [];
-  export let categoryName = "";
+
   export let playerName = "Me";
   export let partnerName = "Partner";
 

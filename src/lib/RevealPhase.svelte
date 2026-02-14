@@ -6,7 +6,7 @@
   export let p2Name = "Player 2";
   export let p1Answers = {};
   export let p2Answers = {};
-  export let category = "romantic";
+
   export let questions = [];
 
   let score = 0;

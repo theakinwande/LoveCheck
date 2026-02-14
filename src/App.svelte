@@ -205,7 +205,6 @@
     {:else if gameState === "answer_p1"}
       <QuestionPhase
         questions={activeQuestions}
-        categoryName="Phase 1: Your Turn"
         playerName={p1Name}
         partnerName={p2Name}
         on:finish={onP1Finished}
@@ -253,7 +252,6 @@
     {:else if gameState === "answer_p2"}
       <QuestionPhase
         questions={activeQuestions}
-        categoryName={`Phase 2: ${p2Name}'s Turn`}
         playerName={p2Name}
         partnerName={p1Name}
         on:finish={onP2Finished}
@@ -297,7 +295,6 @@
         {p2Name}
         {p1Answers}
         {p2Answers}
-        {category}
         questions={activeQuestions}
       />
     {/if}
