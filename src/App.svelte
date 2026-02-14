@@ -307,9 +307,14 @@
     {/if}
 
     <footer
-      class="mt-12 text-center text-xs text-slate-600 font-medium tracking-wide uppercase opacity-50"
+      class="mt-12 text-center text-xs text-stone-500 font-medium tracking-wide uppercase opacity-60 hover:opacity-100 transition-opacity pb-8"
     >
-      © 2026 LoveCheck
+      created by <a
+        href="https://akinwande.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-rose-500 transition-colors">akinwande</a
+      >
     </footer>
   </div>
 </main>

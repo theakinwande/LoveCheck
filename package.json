@@ -20,6 +20,7 @@
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
     "@fontsource/playfair-display": "^5.2.8",
+    "@neondatabase/serverless": "^1.0.2",
     "@vercel/postgres": "^0.10.0",
     "express": "^5.2.1",
     "lucide-svelte": "^0.564.0",

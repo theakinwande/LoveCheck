@@ -16,15 +16,28 @@
   $: currentQuestions = questions;
   $: maxScore = currentQuestions.length;
 
-  onMount(() => {
+  // Reactive Calculation
+  $: if (questions.length > 0 && Object.keys(p1Answers).length > 0) {
     calculateCompatibility();
-    setTimeout(() => {
-      animateScore();
-    }, 200);
+  }
+
+  onMount(() => {
+    if (score > 0) {
+      setTimeout(() => animateScore(), 200);
+    }
   });
+
+  // Watch score change to animate
+  $: if (score > 0 && scoreValue === 0) {
+    setTimeout(() => animateScore(), 200);
+  }
 
   function calculateCompatibility() {
     let exactMatches = 0;
+    matches = []; // Reset
+
+    if (currentQuestions.length === 0) return;
+
     currentQuestions.forEach((q) => {
       const a1 = p1Answers[q.id];
       const a2 = p2Answers[q.id];
@@ -36,7 +49,9 @@
       }
     });
 
-    score = Math.round((exactMatches / maxScore) * 100);
+    if (maxScore > 0) {
+      score = Math.round((exactMatches / maxScore) * 100);
+    }
   }
 
   function animateScore() {
@@ -77,7 +92,7 @@
       Compatibility Index
     </p>
     <div
-      class="text-[8rem] md:text-[12rem] font-serif leading-none text-stone-900 dark:text-white tracking-tighter"
+      class="text-[8rem] md:text-[12rem] font-serif leading-none text-white tracking-tighter"
     >
       {scoreValue}%
     </div>
@@ -104,7 +119,7 @@
           in:fly={{ y: 20, delay: 500 + i * 100, duration: 600 }}
         >
           <p
-            class="text-lg md:text-xl font-serif text-stone-900 dark:text-white mb-4 leading-relaxed"
+            class="text-lg md:text-xl font-serif text-white mb-4 leading-relaxed"
           >
             {item.text}
           </p>
@@ -143,12 +158,13 @@
             </div>
           {/if}
         </div>
+      {:else}
+        <p class="text-white/50 text-center italic">
+          No breakdown available. Please start a new game.
+        </p>
       {/each}
     </div>
   </div>
 
   <!-- Footer Actions -->
-  <div class="mt-16 text-center space-y-4" in:fade={{ delay: 1500 }}>
-    <p class="text-stone-500 text-sm">LoveCheck • {new Date().getFullYear()}</p>
-  </div>
 </div>
