@@ -21,6 +21,7 @@
     "@fontsource/inter": "^5.2.8",
     "@fontsource/playfair-display": "^5.2.8",
     "@vercel/postgres": "^0.10.0",
+    "express": "^5.2.1",
     "lucide-svelte": "^0.564.0",
     "motion": "^12.34.0",
     "pg": "^8.18.0"

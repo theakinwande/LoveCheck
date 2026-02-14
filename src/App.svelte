@@ -86,11 +86,18 @@
           p2Answers: {},
         }),
       });
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`Server error ${res.status}: ${errText}`);
+      }
       const data = await res.json();
+      if (!data.id) throw new Error("No ID returned");
+
       gameId = data.id;
       gameState = "answer_p1";
     } catch (e) {
       console.error("Create failed", e);
+      alert("Could not create game. Check console/logs.");
     }
   }
 
