@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS games (
+  id TEXT PRIMARY KEY,
+  p1_name TEXT,
+  p2_name TEXT,
+  category TEXT,
+  p1_answers JSONB DEFAULT '{}',
+  p2_answers JSONB DEFAULT '{}',
+  active_questions JSONB DEFAULT '[]',
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);

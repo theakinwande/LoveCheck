@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+@import "@fontsource/playfair-display";
+
+@theme {
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+:root {
+  --background: #0c0a09; /* stone-950 */
+  --foreground: #fafaf9; /* stone-50 */
+  color-scheme: dark;
+}
+
+
+:global(body) {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography Utility */
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Minimal Card */
+.minimal-card {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.minimal-input {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  transition: border-color 0.3s ease;
+}
+.minimal-input:focus {
+  outline: none;
+  border-color: #e11d48; /* Rose-600 */
+}
+
+/* Editorial Button */
+.btn-editorial {
+  background: #f2f2f2;
+  color: #0c0a09;
+  border: none;
+  border-radius: 9999px;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-editorial:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.btn-editorial:active {
+  transform: scale(0.98);
+}
+.btn-editorial-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f2f2f2;
+}
+.btn-editorial-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.4);
+}
