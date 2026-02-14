@@ -1,8 +1,10 @@
 export const categories = [
   { id: 'romantic', name: 'Love & Romance', emoji: '❤️', color: 'rose' },
-  { id: 'funny', name: 'Wahala & Vibes', emoji: '😂', color: 'orange' },
+  { id: 'funny', name: 'Vibes', emoji: '😂', color: 'orange' },
   { id: 'deep', name: 'Deep Talks', emoji: '🧠', color: 'indigo' },
 ];
+
+// ... (categories array stays same)
 
 export const questions = {
   romantic: [
@@ -20,7 +22,22 @@ export const questions = {
     { id: 12, text: "Who is more patient?", options: ["Me", "Partner", "Neither lol"] },
     { id: 13, text: "Who remembers anniversaries/dates better?", options: ["Me", "Partner", "Both forget"] },
     { id: 14, text: "Who is more likely to plan a surprise date?", options: ["Me", "Partner", "Neither"] },
-    { id: 15, text: "Who calls more often?", options: ["Me", "Partner", "Texting only"] }
+    { id: 15, text: "Who calls more often?", options: ["Me", "Partner", "Texting only"] },
+    { id: 16, text: "Who is more clingy?", options: ["Me", "Partner", "Neither"] },
+    { id: 17, text: "Who initiates romance/intimacy more?", options: ["Me", "Partner", "Equal"] },
+    { id: 18, text: "Who is better at comforting the other when sad?", options: ["Me", "Partner", "Both"] },
+    { id: 19, text: "Who is more possessive ('My property')?", options: ["Me", "Partner", "Neither"] },
+    { id: 20, text: "Who compliments the other's outfit more?", options: ["Me", "Partner", "Equal"] },
+    { id: 21, text: "Who is more likely to bring up marriage?", options: ["Me", "Partner", "We avoid the topic"] },
+    { id: 22, text: "Who handles long-distance better?", options: ["Me", "Partner", "We would break up"] },
+    { id: 23, text: "Who will be the 'fun parent'?", options: ["Me", "Partner", "Both strict"] },
+    { id: 24, text: "Who takes more pictures of the other?", options: ["Me", "Partner", "Equal"] },
+    { id: 25, text: "Who is more likely to write a love letter/paragraph?", options: ["Me", "Partner", "Both"] },
+    { id: 26, text: "Who falls in love faster?", options: ["Me", "Partner", "Same speed"] },
+    { id: 27, text: "Who is nicer to the other's friends?", options: ["Me", "Partner", "Equal"] },
+    { id: 28, text: "Who is more likely to cry during a movie?", options: ["Me", "Partner", "Neither"] },
+    { id: 29, text: "Who uses pet names (Baby, Champ, etc.) more?", options: ["Me", "Partner", "We use real names"] },
+    { id: 30, text: "Who gives better massages?", options: ["Me", "Partner", "Neither"] }
   ],
   funny: [
     { id: 1, text: "Who is always late ('I'm coming')?", options: ["Me", "Partner", "African time is real"] },
@@ -37,7 +54,22 @@ export const questions = {
     { id: 12, text: "Who is more dramatic (Nollywood style)?", options: ["Me", "Partner", "Both"] },
     { id: 13, text: "Who sleeps off during movies?", options: ["Me", "Partner", "Both"] },
     { id: 14, text: "Who is more likely to dance at a wedding for food?", options: ["Me", "Partner", "Both"] },
-    { id: 15, text: "Who complains more about Nigeria?", options: ["Me", "Partner", "We're tired"] }
+    { id: 15, text: "Who complains more about Nigeria?", options: ["Me", "Partner", "We're tired"] },
+    { id: 16, text: "Who knows more Afrobeats lyrics?", options: ["Me", "Partner", "Equal"] },
+    { id: 17, text: "Who eats the meat before finishing the rice?", options: ["Me", "Partner", "Sacrilege!"] },
+    { id: 18, text: "Who checks their phone first in the morning?", options: ["Me", "Partner", "Both"] },
+    { id: 19, text: "Who is better at lying?", options: ["Me", "Partner", "We are honest"] },
+    { id: 20, text: "Who buys more Suya/Street food?", options: ["Me", "Partner", "Equal"] },
+    { id: 21, text: "Who is more suspicious (looks through phones)?", options: ["Me", "Partner", "We trust each other"] },
+    { id: 22, text: "Who creates the most memes/stickers?", options: ["Me", "Partner", "None"] },
+    { id: 23, text: "Who is likely to say 'God When' on IG?", options: ["Me", "Partner", "Both"] },
+    { id: 24, text: "Who is more likely to forget their wallet?", options: ["Me", "Partner", "Both"] },
+    { id: 25, text: "Who spends more on Data/Airtime?", options: ["Me", "Partner", "WiFi only"] },
+    { id: 26, text: "Who attracts more drama?", options: ["Me", "Partner", "We are peaceful"] },
+    { id: 27, text: "Who is the designated driver?", options: ["Me", "Partner", "Uber/Bolt"] },
+    { id: 28, text: "Who is more likely to trip in public?", options: ["Me", "Partner", "Both clumsy"] },
+    { id: 29, text: "Who has a weirder laugh?", options: ["Me", "Partner", "Both"] },
+    { id: 30, text: "Who takes longer to reply to texts?", options: ["Me", "Partner", "Instant replies"] }
   ],
   deep: [
     { id: 1, text: "Who is more serious about 'meeting the parents'?", options: ["Me", "Partner", "Already met"] },
@@ -54,6 +86,21 @@ export const questions = {
     { id: 12, text: "Who is more emotionally mature?", options: ["Me", "Partner", "Equal"] },
     { id: 13, text: "Who is the better listener?", options: ["Me", "Partner", "Equal"] },
     { id: 14, text: "Who supports the other's dreams more?", options: ["Me", "Partner", "Equal"] },
-    { id: 15, text: "Who is more optimistic about the relationship?", options: ["Me", "Partner", "Both"] }
+    { id: 15, text: "Who is more optimistic about the relationship?", options: ["Me", "Partner", "Both"] },
+    { id: 16, text: "Who is more willing to go to therapy?", options: ["Me", "Partner", "Neither"] },
+    { id: 17, text: "Who values tradition over modern life?", options: ["Me", "Partner", "Both"] },
+    { id: 18, text: "Who would sacrifice career for family?", options: ["Me", "Partner", "Both"] },
+    { id: 19, text: "Who fears failure more?", options: ["Me", "Partner", "Both"] },
+    { id: 20, text: "Who needs more validation/affirmation?", options: ["Me", "Partner", "Equal"] },
+    { id: 21, text: "Who is more likely to keep a secret?", options: ["Me", "Partner", "Both"] },
+    { id: 22, text: "Who judges people more?", options: ["Me", "Partner", "Neither"] },
+    { id: 23, text: "Who is more stubborn?", options: ["Me", "Partner", "Both"] },
+    { id: 24, text: "Who handles change better?", options: ["Me", "Partner", "Neither"] },
+    { id: 25, text: "Who is more generous with money?", options: ["Me", "Partner", "Equal"] },
+    { id: 26, text: "Who is more protective of their privacy?", options: ["Me", "Partner", "Both"] },
+    { id: 27, text: "Who is more likely to forgive cheating?", options: ["Me", "Partner", "Hell no"] },
+    { id: 28, text: "Who cares more about what people think?", options: ["Me", "Partner", "Neither"] },
+    { id: 29, text: "Who is more adventurous?", options: ["Me", "Partner", "Equal"] },
+    { id: 30, text: "Who is the 'rock' in the relationship?", options: ["Me", "Partner", "Shared role"] }
   ]
 };
